@@ -1,0 +1,53 @@
+body{
+    /*background-color: #000000;*/
+}
+p{
+    font-size: 20px;
+    font-family: "Times New Roman";
+    color: red;
+}
+#newproduct{
+    font-size: 20px;
+}
+#money{
+    font-size: 20px;
+}
+#image{
+    font-size: 20px;
+}
+#addProducts{
+    font-size: 20px;
+    height: 35px;
+    width: 100px;
+    background-color: deepskyblue;
+    color: red;
+}
+h2{
+    font-family: "Times New Roman";
+    color: red;
+}
+.edit{
+    font-size: 20px;
+    height: 35px;
+    width: 60px;
+    background-color: deepskyblue;
+    color: red;
+}
+.delete{
+    font-size: 20px;
+    height: 35px;
+    width: 75px;
+    background-color: deepskyblue;
+    color: red;
+}
+#editProduct{
+    font-size: 20px;
+    height: 35px;
+    width: 100px;
+    background-color: deepskyblue;
+    color: red;
+}
+h1{
+    color: chartreuse;
+    text-align: center;
+}

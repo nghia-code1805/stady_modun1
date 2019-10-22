@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>trang đăng nhập</title>
+    <link rel="stylesheet" href="cssTotal.css">
+</head>
+<body>
+    <h1>trang đăng nhập</h1>
+    <p>Tên đăng nhập</p><input id="dangnhap" type="text">&nbsp;&nbsp;
+    <p>Mật khẩu</p><input id="matkhau" type="password">
+    <button id="login11" onclick="log01.login()">đăng nhập</button>
+<script>
+    let UserName = function () {
+        this.arrAdmin = [["admin"], ["1"]];
+
+        this.login = function () {
+            let username = document.getElementById("dangnhap").value;
+            let password = document.getElementById("matkhau").value;
+            if (username.trim() === '') {
+                alert("nhập tên đăng nhập.");
+            } else if (password.trim() === '') {
+                alert("nhập mật khẩu.");
+            } else {
+                for (let i = 0; i < this.arrAdmin[0].length; i++) {
+                    if (username === this.arrAdmin[0][i] && password === this.arrAdmin[1][i]) {
+                        //alert("xin chào " + this.arrAdmin[0][i] + " login success!");
+                        return window.location = "index.html";
+                    }
+                }
+                alert("Tên đăng nhập hoặc mật khẩu không đúng");
+                clearLogin();
+            }
+        };
+    };
+    function clearLogin() {
+        document.getElementById("dangnhap").value = "";
+        document.getElementById("matkhau").value = "";
+    }
+    let log01=new UserName();
+
+</script>
+</body>
+</html>

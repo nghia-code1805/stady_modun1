@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jsTotal.js"></script>
+    <link rel="stylesheet" type="text/css" href="cssTotal.css">
+</head>
+<body>
+<div>
+    <h1>QUẢN LÝ PHỤ KIỆN ĐIỆN THOẠI </h1>
+    <p>Tên Sản Phẩm</p><input id="newproduct" type="text">&nbsp;&nbsp;
+    <p>Giá Tiền</p><input id="money" type="number">
+    <p>Chọn ảnh</p>
+    <input id="image" type="file" name="myFile" >
+    <p id="nutbam">
+    <button id="addProducts" value="Add" onclick="Products.addProducts()">
+        Add
+    </button>
+    </p>
+
+
+    <h2>All Products</h2>
+    <table width="700px" border="2px" id="tableTotal">
+    </table>
+</div>
+</body>
+</html>
